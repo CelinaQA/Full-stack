@@ -17,6 +17,7 @@ const CreateTask = ({ trigger }) => {
         axios.post(`${TASK_URL}/create`, { description, isDone })
             .then((res) => {
                 clearValues();
+                console.log(res);
                 trigger(res.data);
             }).catch((err) => {
                 trigger(err.data);

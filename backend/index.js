@@ -1,14 +1,15 @@
 'use strict';
 
-const express = require("express");
+const express = require('express');
 const cors = require('cors');
 const createError = require('http-errors');
+const bodyParser = require('body-parser');
 
 // instantiate my app
 const app = express();
 
 app.use(cors());
-app.use(express.json()); // body parser - must come before route
+app.use(bodyParser.json()); // body parser - must come before route
 
 const taskRoute = require("./routes/tasks");
 
@@ -24,7 +25,7 @@ app.use((err, req, res, next) => {
 });
 
 // communicate with the app on a specific port
-const server = app.listen(5001, () => {
+const server = app.listen(5019, () => {
     console.log(`Server: ${server.address().port}`)
 })
 

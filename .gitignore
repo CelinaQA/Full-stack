@@ -1,3 +1,4 @@
 /backend/node_modules/
 /backend/config/CONSTS.json
 /backend/package-lock.json
+/frontend/package-lock.json

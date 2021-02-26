@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test of app should match the snapshot every time it is rendered 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbar navbar-expand-md navbar-dark bg-dark"
+  >
+    <ul
+      className="mr-auto navbar-nav"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="/task"
+          onClick={[Function]}
+        >
+          My Tasks
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="container"
+  >
+    <h2>
+      Welcome
+    </h2>
+  </div>
+</div>
+`;
